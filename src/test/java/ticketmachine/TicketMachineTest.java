@@ -67,8 +67,8 @@ class TicketMachineTest {
 	// S7 : refund()rend correctement la monnaie
 	void refundReturnsCorrectBalance() {
 		machine.insertMoney(PRICE + 100);
-		int refund = machine.refund();
 		machine.printTicket();
+		int refund = machine.refund();
 		assertEquals(100, refund, "refund() devrait rendre tout l'argent inséré");
 	}
 
